@@ -29,10 +29,6 @@ enabled=PackedStringArray("res://addons/beehaveCSharp/plugin.cfg")
 
 import/blender/enabled=false
 
-[gdunit4]
-
-settings/test/test_lookup_folder="test/"
-
 [input]
 
 ui_left={

@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://kp5cvfyqdljo"]
 
-[ext_resource type="Texture2D" uid="uid://bdfmfjtvjmv53" path="res://addons/beehaveCSharp/icons/icon.png" id="1_fo16h"]
+[ext_resource type="Texture2D" uid="uid://bdfmfjtvjmv53" path="res://addons/beehaveCSharp/Icons/icon.png" id="1_fo16h"]
 [ext_resource type="Script" path="res://addons/beehaveCSharp/Scripts/Nodes/BeehaveTree.cs" id="2_h432v"]
 [ext_resource type="Script" path="res://addons/beehaveCSharp/Scripts/Blackboard.cs" id="2_ii4bq"]
 [ext_resource type="Script" path="res://addons/beehaveCSharp/Scripts/Nodes/Composites/SelectorReactiveComposite.cs" id="3_csjkd"]

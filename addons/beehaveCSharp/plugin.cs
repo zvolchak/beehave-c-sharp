@@ -3,7 +3,6 @@ using Godot;
 using System.Collections.Generic;
 
 namespace Beehave {
-
     public class CustomNodeMetadata {
 
         public Script Source { get; private set; }
@@ -18,8 +17,6 @@ namespace Beehave {
             this.TypeName = typeName;
             this.NodeName = nodeName;
         }
-
-
     } // class
 
 
@@ -48,38 +45,62 @@ namespace Beehave {
 
         private List<CustomNodeMetadata> getCustomNodes() {
             var treeNode = new CustomNodeMetadata(
-                "Beehave",
                 "BeehaveTree",
+                "Beehave",
                 "res://addons/beehaveCSharp/Scripts/Nodes/BeehaveTree.cs",
                 "res://addons/beehaveCSharp/Icons/tree.svg"
             );
 
             var blackboardNode = new CustomNodeMetadata(
-                    "Beehave",
                     "Blackboard",
+                    "Beehave",
                     "res://addons/beehaveCSharp/Scripts/Blackboard.cs",
                     "res://addons/beehaveCSharp/Icons/blackboard.svg"
                 );
 
             var selectorReactiveNode = new CustomNodeMetadata(
-                    "Beehave",
                     "SelectorReactiveComposite",
+                    "Beehave",
                     "res://addons/beehaveCSharp/Scripts/Nodes/Composites/SelectorReactiveComposite.cs",
                     "res://addons/beehaveCSharp/Icons/selector_reactive.svg"
                 );
 
             var sequenceNode = new CustomNodeMetadata(
-                "Beehave",
                 "SequenceComposite",
+                "Beehave",
                 "res://addons/beehaveCSharp/Scripts/Nodes/Composites/Sequence.cs",
                 "res://addons/beehaveCSharp/Icons/sequence.svg"
+            );
+
+            var actionLeafNode = new CustomNodeMetadata(
+                "ActionLeaf",
+                "Beehave",
+                "res://addons/beehaveCSharp/Scripts/Nodes/Leaves/ActionLeaf.cs",
+                "res://addons/beehaveCSharp/Icons/action.svg"
+            );
+
+            var conditionLeafNode = new CustomNodeMetadata(
+                "ConditionLeaf",
+                "Beehave",
+                "res://addons/beehaveCSharp/Scripts/Nodes/Leaves/ConditionLeaf.cs",
+                "res://addons/beehaveCSharp/Icons/condition.svg"
+            );
+
+            var leafNode = new CustomNodeMetadata(
+                "ConditionLeaf",
+                "Beehave",
+                "res://addons/beehaveCSharp/Scripts/Nodes/Leaves/Leaf.cs",
+                "res://addons/beehaveCSharp/Icons/category_leaf.svg"
             );
 
             return new List<CustomNodeMetadata>() {
                 treeNode,
                 blackboardNode,
                 selectorReactiveNode,
-                sequenceNode
+                sequenceNode,
+                actionLeafNode,
+                conditionLeafNode,
+                leafNode
             };
         } // getCustomNodes
 
