@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beehave", "Beehave.csproj", "{2D413CFD-A71C-4E35-9DD1-09636F4AC122}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D413CFD-A71C-4E35-9DD1-09636F4AC122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D413CFD-A71C-4E35-9DD1-09636F4AC122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D413CFD-A71C-4E35-9DD1-09636F4AC122}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{2D413CFD-A71C-4E35-9DD1-09636F4AC122}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{2D413CFD-A71C-4E35-9DD1-09636F4AC122}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{2D413CFD-A71C-4E35-9DD1-09636F4AC122}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
