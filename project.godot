@@ -23,7 +23,7 @@ project/assembly_name="Beehave"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/beehaveCSharp/plugin.cfg")
+enabled=PackedStringArray("res://addons/beehaveCSharp/plugin.cfg", "res://addons/gdUnit4/plugin.cfg")
 
 [filesystem]
 

@@ -1,6 +1,6 @@
 ﻿#if TOOLS
-using Beehave.Nodes;
 using Godot;
+using Godot.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -12,6 +12,14 @@ namespace Beehave.Nodes.Decorators {
     public partial class Decorator : BeehaveNode {
 
 
+        public override int Tick(Node actor, Blackboard board) {
+            throw new System.NotImplementedException();
+        }
+
+
+        /****************************** GETTERS ******************************/
+
+
         public override string[] _GetConfigurationWarnings() {
             List<string> warnings = base._GetConfigurationWarnings().ToList();
             if (GetChildCount() != 1)
@@ -21,9 +29,11 @@ namespace Beehave.Nodes.Decorators {
         } // _GetConfigurationWarnings
 
 
-        public override int Tick(Node actor, Blackboard board) {
-            throw new System.NotImplementedException();
-        }
+        public override Array<StringName> GetClassNames() {
+            Array<StringName> names = base.GetClassNames();
+            names.Add(new StringName("Decorator"));
+            return names;
+        } // GetClassNames
 
     } // class
 } // namespace
